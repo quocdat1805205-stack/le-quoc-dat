@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lê Quốc Đạt </title>
+    <style>
+         *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+
+      
+        header {
+            background-color: #bcd2ee; /
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        header img {
+            height: 70px;
+            display: block;
+            margin: 0 auto 5px auto;
+        }
+
+        header .header-title {
+            font-weight: bold;
+            font-size: 14px;
+            color: #d11124;
+            letter-spacing: 1px;
+        }
+
+   
+        nav {
+            background-color: #172746; 
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 12px 18px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+   
+        nav ul li a:hover {
+            background-color: #2c426d;
+            color: #ffd700;
+        }
+
+        .banner-container img {
+            width: 100%;
+            display: block;
+        }
+
+
+        .search-bar-container {
+            background-color: #172746;
+            padding: 10px 15px;
+        }
+
+        .search-form {
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 8px 12px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            outline: none;
+            border-radius: 2px;
+        }
+
+        .search-btn {
+            background-color: #e65100; 
+            color: #fff;
+            border: none;
+            padding: 8px 25px;
+            font-weight: bold;
+            font-size: 13px;
+            cursor: pointer;
+            border-radius: 2px;
+            transition: background 0.3s ease;
+        }
+
+        .search-btn:hover {
+            background-color: #bf360c;
+        }
+
+      
+        main {
+            padding: 15px;
+        }
+
+      
+        .top-news-grid {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .news-card {
+            flex: 1;
+            border: 1px solid #e5a075; 
+            padding: 15px;
+            background-color: #fff;
+        }
+
+      
+        .news-title {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            color: #172746;
+            text-decoration: none;
+            margin-bottom: 15px;
+            line-height: 1.3;
+            transition: text-shadow 0.2s ease, color 0.2s ease;
+        }
+
+        .news-title:hover {
+            text-shadow: 2px 2px 4px #000; 
+            color: #0d47a1;
+        }
+
+        .news-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+     
+        .bottom-news-card {
+            border: 1px solid #e5a075;
+            padding: 15px;
+            background-color: #fff;
+        }
+
+        .bottom-news-card .news-title {
+            color: #bd5712; 
+        }
+
+        .bottom-news-card .news-title:hover {
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .news-detail-flex {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .news-detail-flex img {
+            width: 45%;
+            height: auto;
+            display: block;
+        }
+
+        .news-detail-flex p {
+            width: 55%;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333;
+            text-align: justify;
+        }
+
+       
+        footer {
+            background-color: #bcd2ee;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 13px;
+            color: #172746;
+            letter-spacing: 0.5px;
+        }
+        </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <a href="#">
+                <img src="logo.png" alt="FIFA World Cup Russia 2018 Logo">
+            </a>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">WORLD CUP 2018</a></li>
+                <li><a href="#">LỊCH THI ĐẤU</a></li>
+                <li><a href="#">LIVE</a></li>
+                <li><a href="#">KẾT QUẢ</a></li>
+                <li><a href="#">BÌNH LUẬN</a></li>
+                <li><a href="#">ẢNH VÀ VIDEO</a></li>
+            </ul>
+        </nav>
+
+     
+        <div class="banner-container">
+            <a href="#">
+                <img src="banner.jpg" alt="UEFA Champions League Banner">
+            </a>
+        </div>
+
+
+        <div class="search-bar-container">
+            <form id="searchForm" class="search-form" action="#" method="GET" onsubmit="return validateSearchForm()">
+                <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm thông tin WorldCup 2018...">
+                <button type="submit" class="search-btn">TÌM KIẾM</button>
+            </form>
+        </div>
+
+
+        <main>
+           
+            <div class="top-news-grid">
+                <div class="news-card">
+                    <h2>
+                        <a href="#" class="news-title">Trận Nhật Bản - Colombia: Bắt nạt "võ sỹ Samurai" được không?</a>
+                    </h2>
+                    <a href="#">
+                        <img src="img1.jpg" alt="Trận Nhật Bản vs Colombia">
+                    </a>
+                </div>
+
+                <div class="news-card">
+                    <h2>
+                        <a href="#" class="news-title">Mất điểm oan, Brazil bức xúc đòi FIFA cho xem VAR</a>
+                    </h2>
+                    <a href="#">
+                        <img src="img2.jpg" alt="Brazil đòi FIFA cho xem VAR">
+                    </a>
+                </div>
+            </div>
+
+            <div class="bottom-news-card">
+                <h2>
+                    <a href="#" class="news-title">Kèo "thơm" Colombia vs Nhật Bản: Át vía châu Á ở vòng ngoài</a>
+                </h2>
+                <div class="news-detail-flex">
+                    <a href="#" style="width: 45%;">
+                        <img src="img3.jpg" alt="Colombia vs Nhật Bản">
+                    </a>
+                    <p>
+                        Trong quá khứ, Colombia luôn áp đảo khi đối đầu với Nhật Bản. Đã 3 lần hai đội gặp nhau, và đại diện Nam Mỹ có 2 chiến thắng, ghi 5 bàn.Trong lần gần nhất đối mặt, Colombia đã hạ gục Nhật Bản với tỷ số đậm, ở World Cup 2014.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+      
+        <footer>
+            TÊN SINH VIÊN:LÊ QUỐC ĐẠT
+        </footer>
+    </div>
+
+
+    <script>
+        function validateSearchForm() {
+            var searchInput = document.getElementById("searchInput").value.trim();
+            if (searchInput === "") {
+                alert("Vui lòng nhập từ khóa tìm kiếm!");
+                document.getElementById("searchInput").focus();
+                return false; 
+            }
+            alert("Đang tìm kiếm thông tin: " + searchInput);
+            return true;
+        }
+    </script>
+</body>
+</html>
